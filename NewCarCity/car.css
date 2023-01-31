@@ -1,5 +1,11 @@
     /****************************** CARS ************************/
 
+    .car-slot {
+        position: absolute;
+        top: -20px;
+        left: 0px;
+    }
+
     .punto {
         position: absolute;
         height: 50px;
@@ -137,5 +143,22 @@
 
     #rc-swap {
         grid-area: 2 / 5 / 3 / 6;
+    }
+
+
+    /****************WALLLS***********/
+
+    .car-city-app {
+        position: relative;
+    }
+
+    .wall-slot {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .wall-slot div {
+        border-radius: 30px;
     }
     

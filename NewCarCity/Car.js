@@ -3,7 +3,7 @@ class Car {
     used = false;
     acceleration = 0.1;
     speed = 0;
-    gear = 0;
+    gear = 5;
     positionX = 50;
     positionY = 200;
     direction = 90;
@@ -12,9 +12,10 @@ class Car {
     on = false;
     interval;
 
-    constructor(x, y, model) {
+    constructor(x, y, direction, model) {
         this.positionX = x;
         this.positionY = y;
+        this.direction = direction;
         this.model = model;
 
 
