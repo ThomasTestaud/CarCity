@@ -1,6 +1,6 @@
 class Human {
-    positionX = 800;
-    positionY = 800;
+    positionX = 200;
+    positionY = 400;
     used = true;
 
     constructor() {

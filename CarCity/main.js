@@ -12,8 +12,8 @@ import Camera from './Camera.js'
 //Création des objets du jeu
 let rc = new RC();
 let human = new Human();
-let pandaCar = new Car(620, 850, 5, "panda");
-let puntoCar = new Car(100, 320, 270, "punto");
+let pandaCar = new Car(100, 390, 90, "panda", "red");
+let puntoCar = new Car(100, 320, 270, "punto", "blue");
 
 
 

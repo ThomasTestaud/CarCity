@@ -8,15 +8,17 @@ class Car {
     positionY = 200;
     direction = 90;
     model;
+    color;
 
     on = false;
     interval;
 
-    constructor(x, y, direction, model) {
+    constructor(x, y, direction, model, color) {
         this.positionX = x;
         this.positionY = y;
         this.direction = direction;
         this.model = model;
+        this.color = color;
 
 
         this.refresh();
@@ -121,7 +123,7 @@ class Car {
 
     refresh() {
         this.calculateDirection()
-        document.querySelector('.' + this.model).style = `top: ${this.positionY}px; left: ${this.positionX}px; transform: rotate(${this.direction}deg);`;
+        document.querySelector('.' + this.model).style = `top: ${this.positionY}px; left: ${this.positionX}px; transform: rotate(${this.direction}deg); background-color: ${this.color};`;
     }
 
     lights() {
