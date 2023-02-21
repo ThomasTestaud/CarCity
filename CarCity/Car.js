@@ -3,7 +3,7 @@ class Car {
     used = false;
     acceleration = 0.1;
     speed = 0;
-    gear = 5;
+    gear = 2;
     positionX = 50;
     positionY = 200;
     direction = 90;
@@ -126,15 +126,15 @@ class Car {
 
     lights() {
         console.log('Switch the lights');
-        document.querySelectorAll('.headlight-'+this.model)[0].classList.toggle('headlight-on');
-        setTimeout( () => {
-            document.querySelectorAll('.headlight-'+this.model)[1].classList.toggle('headlight-on');
+        document.querySelectorAll('.headlight-' + this.model)[0].classList.toggle('headlight-on');
+        setTimeout(() => {
+            document.querySelectorAll('.headlight-' + this.model)[1].classList.toggle('headlight-on');
         }, 200);
-        setTimeout( () => {
-            document.querySelectorAll('.rearlight-'+this.model)[1].classList.toggle('rearlight-on');
+        setTimeout(() => {
+            document.querySelectorAll('.rearlight-' + this.model)[1].classList.toggle('rearlight-on');
         }, 100);
-        setTimeout( () => {
-            document.querySelectorAll('.rearlight-'+this.model)[0].classList.toggle('rearlight-on');
+        setTimeout(() => {
+            document.querySelectorAll('.rearlight-' + this.model)[0].classList.toggle('rearlight-on');
         }, 250);
     }
 
@@ -143,7 +143,7 @@ class Car {
             console.log('engine is running');
             this.positionX += this.Xcoef;
             this.positionY -= this.Ycoef;
-            this.refresh();
+            //this.refresh();
         }, 35);
     }
 
